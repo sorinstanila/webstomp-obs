@@ -29,7 +29,8 @@ export type ConnectedHeaders = {
     version: string,
     session?: string,
     server?: string,
-    'heart-beat'?: string
+    'heart-beat'?: string,
+    [key: string]: string
 }
 
 export interface SendHeaders extends ExtendedHeaders {
